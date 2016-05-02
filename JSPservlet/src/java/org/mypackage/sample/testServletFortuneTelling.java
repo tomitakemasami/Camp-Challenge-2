@@ -44,7 +44,7 @@ public class testServletFortuneTelling extends HttpServlet {
         //乱数クラス生成        
         Random rand = new Random();
         
-        //乱数クラス取得
+        //乱数クラス取得 
         Integer index = rand.nextInt(luckList.length);
         
         //リクエストスコープへ結果を設定

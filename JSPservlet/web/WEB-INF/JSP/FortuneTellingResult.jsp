@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <%
+        <% 
         ResultData data = (ResultData)request.getAttribute("DATA");
         %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

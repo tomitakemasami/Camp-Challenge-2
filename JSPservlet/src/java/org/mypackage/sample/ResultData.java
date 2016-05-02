@@ -17,7 +17,7 @@ private String luck;
 public ResultData(){}
 
 /**
- * @return the d
+ * @return the d 
  */
 
 public Date getD(){
