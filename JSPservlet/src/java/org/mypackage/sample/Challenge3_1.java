@@ -16,7 +16,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  */
 public class Challenge3_1 extends HttpServlet {
-
+//基礎3 課題1 自分のプロフィール(名前、生年月日、自己紹介)を3行に分けて表示するユーザー定義メソッドを作り、メソッドを10回呼び出して下さい
+    
 String getName() {
     return "冨武真生";
 }
