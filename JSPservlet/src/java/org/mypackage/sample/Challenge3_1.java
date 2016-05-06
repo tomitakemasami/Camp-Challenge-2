@@ -15,22 +15,18 @@ import javax.servlet.http.HttpServletResponse;
 /**
  *
  */
-public class Challenge3_1 extends HttpServlet {
-//基礎3 課題1 自分のプロフィール(名前、生年月日、自己紹介)を3行に分けて表示するユーザー定義メソッドを作り、メソッドを10回呼び出して下さい
+public class Challenge3_1 extends HttpServlet { 
+//基礎3 課題1 自分のプロフィール(名前、生年月日、自己紹介)を
+//3行に分けて表示するユーザー定義メソッドを作り、メソッドを10回呼び出して下さい。
+      
     
-String getName() {
-    return "冨武真生";
+    void Profile(PrintWriter out) {
+String name = "私の名前は冨武真生です<br>";
+String birth = "生年月日は１９８６年１１月２４日です<br>";
+String from = "神奈川県大和市出身です<br>";
+
+out.print(name+birth+from+"<br>");
 }
-
-String getBirth() {
-    return "１９８６年１１月２４日";
-}
-
-String getFrom() {
-    return "神奈川県大和市";
-}
-
-
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -49,16 +45,7 @@ String getFrom() {
 
          for(int i=0;i<10 ;i++ ) {
      
-String name = getName();
-out.println("私の名前は"+name+"です<br>");
-
-String birth = getBirth();
-out.println("生年月日は"+birth+"です<br>");
-
-String from = getFrom();
-out.println("出身は"+from+"です<br>");
-
-out.print("<br>");
+Profile(out);
 
  }
          
