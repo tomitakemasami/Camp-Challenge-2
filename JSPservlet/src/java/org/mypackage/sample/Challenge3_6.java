@@ -63,7 +63,9 @@ return IDMap;
         try (PrintWriter out = response.getWriter()) {
 
 HashMap ID = ID(003);
-out.print(ID.get("名前") + "<br>" + ID.get("生年月日") + "<br>" + ID.get("出身") + "<br>");
+out.print(ID.get("名前") + "<br>");
+out.print(ID.get("生年月日")+ "<br>");
+out.print(ID.get("出身"));
 
 
             out.println("<!DOCTYPE html>");
